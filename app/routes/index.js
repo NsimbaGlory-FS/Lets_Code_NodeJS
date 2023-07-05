@@ -31,7 +31,7 @@ router.post("/", (req, res) => {
 });
 
 router.patch("/", (req, res) => {
-  res.status(200).json({ message: "" });
+  res.status(200).json({ message: "I need a code" });
 });
 
 module.exports = router;
