@@ -30,8 +30,12 @@ router.post("/", (req, res) => {
   res.status(200).json({ message: "We got the request", data });
 });
 
-router.patch("/", (req, res) => {
-  res.status(200).json({ message: "I need a code" });
+`localhost:3000/api/:id`;
+
+router.patch("/:id", (req, res) => {
+  const id = req.params.id;
+  console.log("params >>>", id);
+  res.status(200).json({ message: "Look for code" });
 });
 
 module.exports = router;
