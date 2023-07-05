@@ -4,7 +4,7 @@
   "description": "NodeJS Backend Project",
   "main": "server.js",
   "scripts": {
-    "test": "jest --watchAll",
+    "test": "jest --coverage",
     "start": "node server",
     "dev": "nodemon server"
   },
