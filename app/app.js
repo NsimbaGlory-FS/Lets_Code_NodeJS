@@ -22,8 +22,8 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
   console.log("ERROR >>>", err);
   res
-  .status(err.status II 500)
-  .json({message: err.message, status: err.status });
+    .status(err.status || 500)
+    .json({ message: err.message, status: err.status });
 });
 
 module.exports = app;
