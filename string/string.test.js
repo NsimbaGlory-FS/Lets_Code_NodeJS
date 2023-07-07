@@ -10,20 +10,38 @@ discribe("Testing the string module", () => {
   });
 });
 
-const { add, mul, sub, div } = require("./arith");
+const mathOperations = require("./calculator");
 
-test("4 + 5 = 9", () => {
-  expect(add(4, 5)).toBe(9);
-});
+describe("Calculator tests", () => {
+  test("adding 2 + 2 should return 4", () => {
+    // arrange and act
+    const result = mathOperations.sum(2, 2);
 
-test("4 * 5 = 20", () => {
-  expect(mul(4, 5)).toBe(20);
-});
+    // assert
+    expect(result).toBe(4);
+  });
 
-test("5 - 6 = -1", () => {
-  expect(sub(5, 6)).toBe(-1);
-});
+  test("subtracting 8 from 2 should return 6", () => {
+    // arrange and act
+    const result = mathOperations.diff(8, 2);
 
-test("10 / 2 = 5", () => {
-  expect(div(10, 2)).toBe(5);
+    // assert
+    expect(result).toBe(6);
+  });
+
+  test("multiplying 2 and 5 should return 10", () => {
+    // arrange and act
+    const result = mathOperations.product(2, 5);
+
+    // assert
+    expect(result).toBe(10);
+  });
+
+  test("divide 12 and 2 should return 6", () => {
+    // arrange and act
+    const result = mathOperations.product(12, 2);
+
+    // assert
+    expect(result).toBe(6);
+  });
 });
