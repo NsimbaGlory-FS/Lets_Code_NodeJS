@@ -39,7 +39,7 @@ describe("Calculator tests", () => {
 
   test("divide 12 and 2 should return 6", () => {
     // arrange and act
-    const result = mathOperations.product(12, 2);
+    const result = mathOperations.quotient(12, 2);
 
     // assert
     expect(result).toBe(6);
