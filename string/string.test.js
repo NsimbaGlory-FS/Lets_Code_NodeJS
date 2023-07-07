@@ -12,18 +12,18 @@ discribe("Testing the string module", () => {
 
 const { add, mul, sub, div } = require("./arith");
 
-test("2 + 3 = 5", () => {
-  expect(add(2, 3)).toBe(5);
+test("4 + 5 = 9", () => {
+  expect(add(4, 5)).toBe(9);
 });
 
-test("3 * 4 = 12", () => {
-  expect(mul(3, 4)).toBe(12);
+test("4 * 5 = 20", () => {
+  expect(mul(4, 5)).toBe(20);
 });
 
 test("5 - 6 = -1", () => {
   expect(sub(5, 6)).toBe(-1);
 });
 
-test("8 / 4 = 2", () => {
-  expect(div(8, 4)).toBe(2);
+test("10 / 2 = 5", () => {
+  expect(div(10, 2)).toBe(5);
 });
