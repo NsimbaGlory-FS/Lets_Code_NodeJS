@@ -13,7 +13,7 @@ discribe("Testing the string module", () => {
 const mathOperations = require("./calculator");
 
 describe("Calculator tests", () => {
-  test("adding 2 + 2 should return 4", () => {
+  test("adding 2 + 2 shoulds return 4", () => {
     // arrange and act
     const result = mathOperations.sum(2, 2);
 
