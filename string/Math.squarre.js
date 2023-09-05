@@ -1,32 +1,20 @@
-function addition(a, b) {
-    return (a + b);
+function calcHypotenuse(a, b) {
+    return Math.sqrt(a * a + b * b);
   }
   
-  console.log(addition(2 + 2));
-  // Expected output: 4
- 
+  console.log(calcHypotenuse(2 , 2));
+    // Expected output: 4
+   
+    
+    console.log(calcHypotenuse(8 , 2));
+    // Expected output: 6
   
-  function subtracting(a, b) {
-    return (a - b);
-  }
+    
+    console.log(calcHypotenuse(2 , 5));
+    // Expected output: 10
   
-  console.log(subtracting(8 - 2));
-  // Expected output: 6
-  
-  
-  function multiplying(a, b) {
-    return (a * a);
-  }
-  
-  console.log(multiplying(2 * 5));
-  // Expected output: 10
-
- function divide(a, b) {
-    return (a / b);
-  }
-  
-  console.log(divide(12 / 2));
-  // Expected output: 6
-  
-  
+    
+    console.log(calcHypotenuse(12 , 2));
+    // Expected output: 6
+    
   
