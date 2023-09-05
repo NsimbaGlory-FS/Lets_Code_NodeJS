@@ -1,8 +1,8 @@
-function adding(a, b) {
+function addition(a, b) {
     return (a + b);
   }
   
-  console.log(adding(2 + 2));
+  console.log(addition(2 + 2));
   // Expected output: 4
  
   
