@@ -1,4 +1,4 @@
- function adding(a, b) {
+ function y (a, b) {
     
     return Math.sqrt(2, 2);
     // Expected output: 4
@@ -10,7 +10,7 @@
     console.log(y);
   } 
 
-  function adding(a, b) {
+  function maximun (a, b) {
       return Math.max(3, 4);
       
       let a = 3;

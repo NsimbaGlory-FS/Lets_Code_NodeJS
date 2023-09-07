@@ -18,7 +18,8 @@ router.get("/", (req, res) => {
 `localhost:3000/api/:id`;
 
 router.delete("/:id", (req, res) => {
-  const todo = arr.find((obj) => obj.id === id);
+  const todo = array.id(data);
+  delete data (req.params.id)
   const id = req.params.id;
   console.log("params >>>", id);
   res.status(200).json({ message: "From the API" });
