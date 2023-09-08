@@ -18,19 +18,16 @@ router.get("/", (req, res) => {
 `localhost:3000/api/:id`;
 
 
-let car = {
-  "color": "red",
-  "type" : "Bmw"
-}
-
 router.delete("/:id", (req, res) => {
-  
+  let car = {
+    "color": "red",
+    "type" : "Bmw"
+  }
   const todo = cars.splice(4, 0, car);
   const todos = cars.splice();
   const id = req.params.id;
   console.log("params >>>", id);
   res.status(200).json({ message: "From the API" });
-  
 });
 
 router.post("/", (req, res) => {
