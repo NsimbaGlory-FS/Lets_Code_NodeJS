@@ -1,7 +1,7 @@
 // importing the javascript function
 const {add, subtract, multiply, divide, max, sqrt } = require('./math');
 
-describe("Testing the string module", () => {
+describe("Testing the Math.js module", () => {
     
     
     test('Add numbers using the add method', () => {
