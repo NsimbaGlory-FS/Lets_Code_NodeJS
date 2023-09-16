@@ -23,7 +23,7 @@ describe("Testing the string module", () => {
 
 describe("Testing max", () => {
 test("testing max", () => {
-    expect(max(3, 4)).toBe(4)
+    expect(Math.max(3, 4)).toBe(4)
 
 })
 
